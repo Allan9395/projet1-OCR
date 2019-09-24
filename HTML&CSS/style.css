@@ -1,0 +1,523 @@
+/*------------------------------------------------------------------GENERAL--------------------------------------------------------------------*/
+body {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 ;
+    padding: 0;
+}
+em{
+    font-style : normal;
+}
+/*------------------------------------------------------------------GENERAL--------------------------------------------------------------------*/
+/*------------------------------------------------------------------HEADER---------------------------------------------------------------------*/
+header {
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: white;
+    z-index: 10;
+}
+
+header li a {
+    text-decoration: none;
+    color: #898989;
+    padding: 24px 15px 24px 15px;
+}
+
+#menu ul {
+    color: #898989;
+    list-style-type: none;
+    display: flex;
+}
+
+#menu ul li a:hover {
+    color: #6d6d6d;
+    border-top: 3px solid #5badd3;
+}
+
+/*------------------------------------------------------------------HEADER---------------------------------------------------------------------*/
+/*-------------------------------------------------------------SECTION 1 SLIDER----------------------------------------------------------------*/
+
+#image-slider {
+    position: relative;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+#image-slider img{
+    width:  100%;
+}
+
+#text-slider{
+    color: white;
+    position: absolute;
+    top: 25%;
+    text-align: left;
+    left: 10%;
+    width: 40%;
+    font-style: normal;
+}
+#text-slider h1{
+    font-size: 2em;
+}
+#text-slider p{
+    margin-bottom: 40px;
+}
+
+#nom-entreprise {
+    color: #5badd3;
+}
+.bouton-droit{
+    align-self:  flex-end;
+    right: -30px;
+}
+.fa-angle-right:before{
+    margin-left: 12px;
+    font-size: 25px;
+}
+.bouton-gauche{
+    align-self: flex-start;
+    align-content: flex-start;
+    left: -30px;
+}
+.fa-angle-left:before{
+    margin-left: 35px;
+    font-size: 25px;
+}
+.bouton {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    top: 50%;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+.bouton:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+#bouton-info {
+    color: white;
+    background-color: #5badd3;
+    text-decoration: none;
+    border-bottom: 3px solid #4494bb;
+    border-radius: 3px;
+    padding: 10px 15px;
+}
+
+#trait-slider {
+    position: absolute;
+    width: 10%;
+    top: 99.3%;
+    border: 2px solid #5badd3;
+}
+
+/*-------------------------------------------------------------SECTION 1 SLIDER----------------------------------------------------------------*/
+/*-------------------------------------------------------------SECTION 2 SERVICES--------------------------------------------------------------*/
+#services {
+    margin-top: 5%;
+}
+/*--------------En-tête services et projets--------------------*/
+
+.en-tete{
+    margin-top: 60px;
+    text-align: center;
+}
+.en-tete h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.en-tete.projets{
+    margin-top: 80px;
+}
+hr {
+    height: 2px;
+    width: 10%;
+    background-color: #ececec;
+    border: 0;
+    padding: 0;
+}
+
+.cercle {
+    display: inline;
+    position: relative;
+    background-color: white;
+    color: #5cadd3;
+    border-radius: 100%;
+    padding: 3px 4px 1px 4px;
+    top: -18px;
+    left: auto;
+}
+.soustitre {
+    margin-left: 300px;
+    margin-right: 300px;
+    color: #7a7d80;
+}
+/*--------------En-tête services et projets--------------------*/
+
+#description-services {
+    display: flex;
+    max-width: 1425px;
+    margin: 0 auto;
+}
+.icone-text-services{
+    display: flex;
+}
+/*--------------Icones--------------------*/
+
+.icone-services {
+    padding-right: 20px;
+    padding-top: 25px;
+    display: flex;
+    align-self: center;
+}
+
+.circle{
+    background-color: white;
+    color: #5cadd3;
+    border-radius: 100%;
+    padding: 3px 4px 1px 4px;
+    align-self: center;
+    margin-left: -14px;
+}
+.fa-chart-line {
+    color: #5cadd3;
+    border: 2px solid #e3e3e3;
+    border-radius: 100%;
+    padding: 20px 20px 20px 20px;
+    font-size: 2em;
+}
+
+.fa-cubes {
+    color: #5cadd3;
+    border: 2px solid #e3e3e3;
+    border-radius: 100%;
+    padding: 20px 20px 20px 20px;
+    font-size: 2em;
+}
+
+.fa-chart-pie {
+    color: #5cadd3;
+    border: 2px solid #e3e3e3;
+    border-radius: 100%;
+    padding: 20px 20px 20px 20px;
+    font-size: 2em;
+}
+/*--------------Icones--------------------*/
+
+/*-------------------------------------------------------------SECTION 2 SERVICES---------------------------------------------------------------*/
+/*-------------------------------------------------------------SECTION 3 PROJETS----------------------------------------------------------------*/
+.section-projets {
+    background: #f5f5f5;
+}
+
+.nav2 {
+    margin-bottom: 80px;
+    margin-top: 100px;
+}
+.nav2 ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+.nav2 li{
+    margin-bottom: 50px;
+}
+
+.nav2 li a{
+    text-decoration: none;
+    color: #74777b;
+    background-color: #e5e5e5;
+    margin: 0;
+    padding: 16px 24px;
+}
+.fleche1{
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; 
+}
+.fleche2{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.nav2 ul li a:hover {
+    color: white;
+    background-color: #5cadd3;
+    border-bottom: 4px solid #468cad;
+    position: relative;
+
+}
+.fleche:hover:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 39%;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid #468cad;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+/*Premier élément du menu*/
+.nav2 li a.fleche1:first-child{
+    color: white;
+    background-color: #5cadd3;
+    border-bottom: 4px solid #468cad;
+    position: relative;
+}
+.nav2 li a.fleche1:first-child::after{
+    content: "";
+    position: absolute;
+    display: block;
+    left: 39%;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid #468cad;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+/*Premier élément du menu*/
+/*-------Portfolio-------*/
+.images-portfolio{
+    width: 260px;
+}
+#image-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1425px;
+}
+#image-portfolio figure {
+    position: relative;
+}
+#image-portfolio figure figcaption {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    bottom: -150px;
+    opacity: 0;
+}
+figure figcaption{
+    padding:5px;
+    padding-left: 16px;
+}
+figure figcaption h3 {
+    font-size: 1em;
+    color: #ffffff;
+    margin-top: 11px;
+}
+
+figure figcaption p {
+    margin-top: -12px;
+    color: #ffffff;
+    font-size: 0.80em;
+}
+
+#image-portfolio figure:hover > figcaption {
+    bottom: 4px;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.eye {
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    background-color: rgb(78, 177, 213);
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: -23px;
+    right: 10px;
+    cursor: pointer;
+
+}
+
+.fa.fa-eye {
+    position: relative;
+    top: 14px;
+    left: 33%;
+    margin: auto;
+}
+
+/*-------------------------------------------------------------SECTION 3 PROJETS----------------------------------------------------------------*/
+/*-------------------------------------------------------------FOOTER CONTACT----------------------------------------------------------------*/
+
+/*-------carte-------*/
+.map
+{
+	overflow: hidden;
+	position: relative;
+    height: 750px;
+    background-color: #468CAD;
+}
+
+#carte iframe {
+    width: 100%;
+	height: 750px;
+	opacity: .7;
+    position: absolute;
+    border:none
+}
+/*-------formulaire-------*/
+
+#formulaire h2 {
+    font-size: 1.7em;
+    margin-left: 20px;
+}
+#formulaire p{
+    color: #7a7d80;
+    margin-left: 20px;
+}
+
+#formulaire {
+    position: absolute;
+    width: 365px;
+    height: auto;
+    background-color: rgba(255, 255, 255, .9);
+    top: 10%;
+    left: 60%;
+}
+input,textarea{
+    padding-left: 10px;
+    border: 1px solid #cecece;
+    border-radius: 5px;
+    font-size: 0.85em;
+    opacity: 0.8;
+}
+input[type=text], input[type=email]{
+    width: 300px;
+    height: 25px;
+}
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 300px;
+    height: 170px;
+    padding-top: 10px;
+}
+input[type=submit] {
+    width: 115px;
+    background-color: #5badd3;
+    height: 30px;
+    color: white;
+}
+
+/*-------------------------------------------------------------FOOTER CONTACT----------------------------------------------------------------*/
+/*-------------------------------------------------------------MEDIA QUERIES-----------------------------------------------------------------*/
+@media screen and (max-width: 1020px){
+body{
+    width: auto;
+}
+header{
+    flex-direction: column;
+    padding-top: 2%;
+}
+#menu ul{
+    padding: 0;
+}
+#menu ul li a:hover {
+    color: #6d6d6d;
+    border-top: 0px solid #5badd3;
+}
+.section1-slider{
+    margin-top: 100px;
+}
+#image-slider img, .bouton, #trait-slider{
+    display: none;
+}
+#bouton-info{
+    width: 100px;
+    height: auto;
+    font-size: 1.5rem;
+}
+#text-slider{
+    position: relative;
+    width: 100%;
+    left: 0%;
+    padding: 20px;
+   color: black;
+}
+#text-slider h1{
+    font-size: 2.5rem;
+}
+#text-slider p{
+    font-size: 1.5rem;
+}
+.en-tete{
+    padding-top: 1%;
+}
+.section-services{
+    width: auto;
+}
+.text-description-services{
+    padding: 20px;
+}
+.soustitre{
+    margin: 0 auto;
+    padding: 20px;
+}
+#image-ordi p img{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+#bouton-info{
+    width: 100px;
+    height: auto;
+}
+#description-services{
+    flex-direction: column;
+}
+.map{
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    background-color: white;
+}
+#carte{
+    background-color: #468CAD;
+    height: 400px;
+}
+#carte iframe{
+    position: initial; 
+    width: 100%  
+}
+#formulaire{
+    position: initial;
+    margin: 0 auto;
+    margin-top: 100px;
+
+}
+#nav2 ul{
+    display: flex;
+    width: 100%;
+    padding-left: 0;
+}
+#nav2 li a {
+    padding: 5px 5px;
+}
+input, textarea {
+    border: 1px #cecece solid
+}
+}
